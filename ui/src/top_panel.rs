@@ -14,6 +14,9 @@ impl WalksnailOsdTool {
                 self.about_window(ui, ctx);
             });
             ui.add_space(3.0);
+
+            ctx.set_visuals(Visuals::dark());
+            self.dark_mode = true;
         });
     }
 
